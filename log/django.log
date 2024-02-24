@@ -1,0 +1,33 @@
+Watching for file changes with StatReloader
+C:\Users\kiral\Django\Travel_Blog\web_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /about/ HTTP/1.1" 200 22
+"GET / HTTP/1.1" 200 11
+"GET / HTTP/1.1" 200 11
+C:\Users\kiral\Django\Travel_Blog\Travel_Blog\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Index page accessed
+"GET / HTTP/1.1" 200 11
+Error in about page division by zero
+Traceback (most recent call last):
+  File "C:\Users\kiral\Django\Travel_Blog\web_app\views.py", line 13, in about
+    result = 1 / 0
+ZeroDivisionError: division by zero
+"GET /about/ HTTP/1.1" 200 22
+C:\Users\kiral\Django\Travel_Blog\Travel_Blog\settings.py changed, reloading.
+INFO 2024-02-21 22:56:56,972 autoreload 17596 25044 Watching for file changes with StatReloader
+ERROR 2024-02-21 22:57:18,150 views 17596 26188 Error in about page division by zero
+Traceback (most recent call last):
+  File "C:\Users\kiral\Django\Travel_Blog\web_app\views.py", line 13, in about
+    result = 1 / 0
+ZeroDivisionError: division by zero
+INFO 2024-02-21 22:57:18,153 basehttp 17596 26188 "GET /about/ HTTP/1.1" 200 22
+INFO 2024-02-21 22:57:20,837 views 17596 26188 Index page accessed
+INFO 2024-02-21 22:57:20,850 basehttp 17596 26188 "GET / HTTP/1.1" 200 11
+INFO 2024-02-21 23:12:56,433 autoreload 17596 25044 C:\Users\kiral\Django\Travel_Blog\web_app\models.py changed, reloading.
+INFO 2024-02-21 23:13:02,130 autoreload 9112 25796 Watching for file changes with StatReloader
+INFO 2024-02-21 23:15:21,646 autoreload 9112 25796 C:\Users\kiral\Django\Travel_Blog\web_app\models.py changed, reloading.
+INFO 2024-02-21 23:15:24,519 autoreload 12380 20192 Watching for file changes with StatReloader
+INFO 2024-02-21 23:16:45,106 autoreload 12380 20192 C:\Users\kiral\Django\Travel_Blog\web_app\models.py changed, reloading.
+INFO 2024-02-21 23:16:47,640 autoreload 14528 8152 Watching for file changes with StatReloader
