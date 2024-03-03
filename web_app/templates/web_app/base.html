@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        Surf Flow
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href='static/style.css' />
+</head>
+<body class="body_style">
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__wrapper">
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="headder__logo">
+                            <a href="#" class="logo_link">Surf Flow</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header_link">Планирование Приключения</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header_link">Дневник Приключения</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header_link">Вход/Регистрация</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <br>
+    {% block content %}
+        Страница не заполнена
+    {% endblock %}
+    <hr>
+    <footer>
+        <p>All rights reserved by KIR(c)</p>
+        <p>E-mail: kir.allyanov99@mail.ru</p>
+    </footer>
+<script src="/static/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

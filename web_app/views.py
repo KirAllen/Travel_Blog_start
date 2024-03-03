@@ -6,7 +6,7 @@ logger = logging.getLogger(__name__)
 
 def index(request):
     logger.info('Index page accessed')
-    return HttpResponse('Hello, Kir!')
+    return render(request, 'web_app/home.html')
 
 def about(request):
     try:
