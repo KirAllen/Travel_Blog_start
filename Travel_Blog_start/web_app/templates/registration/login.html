@@ -1,0 +1,31 @@
+{% extends 'web_app/base.html' %}
+{% block title %}
+    Login
+{% endblock %}
+
+{% block content %}
+    <div class="form">
+		<form method="POST" action="{% url 'loging' %}" class="input-form">
+
+			{% csrf_token %}
+			<p>
+				{{ form.username.label }}<br>
+				{{ form.username }}<br> 
+			</p>
+			<br>
+			<p>
+				{{ form.password.label }}<br> 
+				{{ form.password }}
+			</p>
+            <br> 
+				<input type="submit" value="Login" class="btn">
+			</p>
+            <br>
+			<a href="{% url 'registration' %}" class="registration">Registration</a>
+		</form>
+	</div>
+    <hr>
+<script src="/static/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+{% endblock %}

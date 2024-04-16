@@ -1,0 +1,41 @@
+{% extends 'web_app/base.html' %}
+{% block title %}
+    Registation
+{% endblock %}
+
+{% block content %}
+    <div class="form">
+		<form method="POST" action="{% url 'registration' %}" class="input-form">
+			
+			{% csrf_token %}
+			<p>
+				{{ form.username.label }}<br>
+				{{ form.username }}<br> 
+			</p>
+			<br> 
+			<p>
+				{{ form.email.label }}<br> 
+				{{ form.email }}
+			</p>
+			<br> 
+			<p>
+				{{ form.password1.label }}<br>
+				{{ form.password1 }}<br> 
+			</p>
+			<br> 
+			<p>
+				{{ form.password2.label }}<br> 
+				{{ form.password2 }}
+			</p>
+			<br> 
+            <p>
+				<input type="submit" value="Confirm" class="btn">
+			</p>
+
+		</form>
+	</div>
+    <hr>
+<script src="/static/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'web_app/base.html' %}
+{% block title %}
+    Login
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    {% for article in articles %}
+        <div class="article">
+            <div class="title">
+                Заголовок: {{ article.title }}</p>
+                <br>
+                <div class="content">
+                    Содержание: {{ article.content }}</p>
+                    <br>
+                    </p>
+                     <br>
+                    <div class="buttons">
+                        <a href="#" class="Delete">Done</a>
+                        <a href="#" class="Change">Change</a>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    {% endfor %}
+</div>
+<script src="/static/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+{% endblock %}

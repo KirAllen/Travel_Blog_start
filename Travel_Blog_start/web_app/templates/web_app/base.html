@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+        Surf Flow
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'web_app/css/style.css' %} "/>
+</head>
+<body class="body_style">
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__wrapper">
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="headder__logo">
+                            <a href="{% url 'index' %}" class="logo_link">Surf Flow</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="{% url 'plan' %}" class="header_link">Планирование Приключения</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="{% url 'diary' %}"class="header_link">Дневник Приключения</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="{% url 'canban' %}" class="header_link">Канбан</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="{% url 'loging' %}" class="header_link">Вход/Регистрация</a>
+                        </li>
+                        <li class="headder__item">
+                            <a href="{% url 'about' %}" class="header_link">About</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="{% url 'logout' %}" class="header_link">Logout</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <br>
+    {% block content %}
+        Страница не заполнена
+    {% endblock %}
+    <hr>
+    <footer>
+        <p>All rights reserved by KIR(c)</p>
+        <p>E-mail: kir.allyanov99@mail.ru</p>
+    </footer>
+<script src="/static/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

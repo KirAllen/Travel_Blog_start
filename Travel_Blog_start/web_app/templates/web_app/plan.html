@@ -1,0 +1,47 @@
+{% extends 'web_app/base.html' %}
+{% block title %}
+    Plan
+{% endblock %}
+
+{% block content %}
+    <div class="features">
+		<form method="POST" action="{% url 'plan' %}" class="input-form">
+
+			{% csrf_token %}
+			<p>
+				{{ form.title.label }}<br>
+				<br> 
+				{{ form.title }}<br> 
+			</p>
+			<br>
+			<br> 
+			<p>
+				{{ form.content.label }}<br> 
+				<br> 
+				{{ form.content }}<br>
+				<br> 
+				<br> 
+			</p>
+			<p>
+				{{ form.from_date.label }}<br>
+				<br>
+				{{ form.from_date}}
+				<br> 
+				<br> 
+			</p>
+			<p>
+				{{ form.to_date.label }}<br>
+				<br>
+				{{ form.to_date}}
+			</p>
+			<p>
+				<br> 
+				<br> 
+				<input type="submit" value="Confirm" class="btn">
+			</p>
+		</form>
+	</div>
+{% endblock %}
+<script src="/static/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
